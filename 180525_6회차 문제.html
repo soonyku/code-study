@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- 책에 있는 예제를 이용하기 위해 gride-guide.css를 넣었습니다. 이 소스를 이용하면 박스에 디자인이 기본적으로 되어 있습니다. -->
+  <!-- 이 소스에서는 박스의 디자인 말고, 레이아웃만 중점적으로 보시길 바랍니다. -->
+  <link rel="stylesheet" href="grid-guide.css">
+  <link rel="stylesheet" href="style_6.css">
+  <title>6회 과제, 박스모델의 이해</title>
+</head>
+<body>
+
+  <!-- 첫번째, 박스 4개를 만들기 -->
+  <!-- (box model) 웹 페이지의 layout을 구성하는 방법 학습 -->
+  <!-- emmet tip, div.box${$번째 박스}*4를 치고 tab을 눌러보세요 -->
+  <div class="box1">
+    1번째 박스
+  </div>
+
+  <div class="box2">
+    2번째 박스
+  </div>
+
+  <div class="box3">
+    3번째 박스
+  </div>
+
+  <div class="box4">
+    4번째 박스
+  </div>
+  <!-- 보는것 처럼 div라는 태그를 이용하여 코딩하면 block처럼 한칸한칸 내려갑니다 -->
+  <!-- Block요소와 inline요소에 대해서 알아보세요 ! -->
+
+  <br><br>
+
+  <!-- 두번째, 2번 박스와 3번 박스를 클래스 boxA로 묶기 -->
+  <div class="box1">
+    1번째 박스
+  </div>
+
+  <div class="boxA">
+
+    <div class="box2">
+      2번째 박스
+    </div>
+
+    <div class="box3">
+      3번째 박스
+    </div>
+
+  </div>
+
+  <div class="box4">
+    4번째 박스
+  </div>
+
+  <br><br>
+
+  <!-- 세번째, 2번, 3번, 4번 박스를 나란히 가로로 정렬하기 -->
+  <div class="box1">
+    1번째 박스
+  </div>
+
+  <div class="boxA">
+
+    <div class="box2a">
+      2번째 박스
+    </div>
+
+    <div class="box3a">
+      3번째 박스
+    </div>
+
+  </div>
+
+  <div class="box4">
+    4번째 박스
+  </div>
+  <!-- 이렇게 중간에 style태그를 넣어서 css를 삽입할 수 있지만, 학습을 위해서 이므로 권장하지 않습니다 -->
+  <style>
+    .box2a{
+      /* 영역을 차지하지 않고 띄우는 코드, 반드시 코드를 검색하여 이해하기 바랍니다. 검색하고 스스로 찾는 능력은 개발에서는 절대적입니다. */
+      float:left;
+    }
+    .box3a{
+      float:left;
+    }
+  </style>
+
+  <br><br>
+
+  <!-- 네번째, 박스 4번을 박스 2,3번과 붙지않게 밑으로 내려기 -->
+  <div class="box1">
+    1번째 박스
+  </div>
+  <div class="boxAa">
+    <div class="box2a">
+      2번째 박스
+    </div>
+    <div class="box3a">
+      3번째 박스
+    </div>
+  </div>
+  <div class="box4a">
+    4번째 박스
+  </div>
+  <style>
+    /* css의 주석은 이렇게 작성합니다 */
+    /* 박스 구조를 내리는 방법은 clear, overflow가 있습니다. 이러한 기술을 clearfix라고 합니다. */
+
+    /* 첫번째 방법, overflow:hidden;
+    .boxAa{
+      overflow:hidden;
+    }
+    */
+
+    /* 두번째 방법, clear:both; */
+    .box4a{
+      clear:both;
+    }
+
+    /* 첫번째 방법과 두번째 방법은 차이가 있습니다. */
+    /* .boxAa에 overflow:hidden; 처리하면 .boxAa의 영역 전체가 유지되고 .box4a가 내려갑니다. */
+    /* .box4a에 clear:both;를 처리하면 .box2a, .box3a의 영역까지만 유지되고 .box4a가 내려갑니다. */
+    /* 상세한 사항은 clearfix 기술, 혹은 clear:both, overflow:hidden에 대해 검색하시기 바랍니다. */
+  </style>
+
+  <br><br>
+
+  <!-- 다섯번째, 박스 2번과 3번을 중간에 화면의 50%씩 차지하게 하기-->
+  <div class="box1">
+    1번째 박스
+  </div>
+  <div class="boxAb">
+    <div class="box2b">
+      2번째 박스
+    </div>
+    <div class="box3b">
+      3번째 박스
+    </div>
+  </div>
+  <div class="box4">
+    4번째 박스
+  </div>
+
+  <style>
+    .box2b{
+      float: left;
+      width:50%;
+    }
+    .box3b{
+      float: left;
+      width:50%;
+    }
+    .boxAb{
+      overflow:hidden;
+    }
+  </style>
+
+  <!-- 문제, 지금은 가운데에 2개의 박스(1개/2개/2개)가 놓여져 있습니다. -->
+  <!-- 이를 2개/1개/1개, 1개/1개/2개, 2개/2개로 놓아보시기 바랍니다.-->
+  <!-- 또한 박스를 3개/1개, 4개 가로로 배치해보시기 바랍니다. -->
+  <!--  정답은 정답폴더에 있습니다 -->
+
+</body>
+</html>

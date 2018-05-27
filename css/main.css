@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* Title Area */
+.site h1 a{
+  color: #000; /* 클래스 site아래 a링크의 글자색을 검은색으로 지정 */
+  text-decoration: none; /* 클래스 site아래 a링크에서 자동으로 생성되는 밑줄 제거 */
+}
+
+.site h1{
+  margin: 0; /* 클래스 site아래 h1태그의 외부간격(margin)을 0px로 지정 */
+  font-size: 30px; /* 클래스 site아래 h1태그의 글자크기를 30px로 지정 */
+}
+
+.site p{
+  margin:0; /* 클래스 site아래 p태그의 외부간격(margin)을 0px로 지정 */
+  font-size: 12px; /* 클래스 site아래 p태그의 글자크기를 12px로 지정 */
+}
+
+/* Navigation */
+.menu ul{
+  margin:0; /* ul태그의 외부간격(margin)을 0px로 지정 */
+  padding:0; /* ul태그의 내부간격(padding)을 0px로 지정 */
+  list-style: none; /* ul태그의 bullit기호를 없앰 */
+}
+
+.menu a{
+  display: block; /* inline요소인 a태그를 block요소로 변경 */
+  padding: 5px; /* a태그의 내부간격(padding)을 5px로 지정 */
+  color: #000; /* a태그의 글자색을 검은색으로 지정 */
+  font-size: 14px; /* 글자 크기를 14px로 지정 */
+  text-decoration: none; /* a태그에서 자동으로 생기는 밑줄을 제거 */
+}
+
+.menu li a:hover{
+  background-color: #eee; /* a태그에 마우스를 가져다 댔을때 배경색을 #eee로 지정 */
+}
+
+.menu li{
+  float:left; /* li태그들을 가로로 나열되도록 플로팅 */
+}
+
+nav{
+  overflow: hidden; /* 플로팅한 li태그들에 대해 clearfix 처리 */
+}
+
+/* article Area */
+.story h1{
+  margin-top:0; /* 클래스 story아래 h1태그의 위쪽 외부간격(margin-top)을 0px로 지정 */
+  margin-bottom: 20px; /* 클래스 story아래 h1태그의 아래쪽 외부간격(margin-bottom)을 20px로 지정 */
+  font-size: 36px; /* 클래스 story아래 h1태그의 글자크기를 36px로 지정 */
+}
+
+.story p{
+  margin-top:0; /* 클래스 story아래 p태그의 위쪽 외부간격(margin-top)을 0px로 지정 */
+  margin-bottom:20px; /* 클래스 story아래 p태그의 아래쪽 외부간격(margin-top)을 20px로 지정 */
+}
+
+/* Copyright Area */
+.copyright p{
+  margin:0;
+  color:#666;
+  font-size: 14px;
+}

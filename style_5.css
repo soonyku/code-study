@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header{
+  margin: 30px;
+}
+
+img{
+  margin-top : 30px;
+}
+
+#css_title{
+  font-size: 60px;
+  color : blue;
+}
+
+.css_articles{
+  margin: 50px;
+}
+
+.css_articles h3 {
+  margin : 15px;
+}
+
+article > h2 {
+  font-size: 25px;
+  color:red;
+}
+
+article:first-child > p:nth-child(1){
+  font-size:40px;
+}
+
+article:nth-of-type(2) > h2{
+  font-size:50px;
+}
+
+article:nth-of-type(3) > h2::before{
+  content:"CSS로 앞에 추가한 콘텐츠 / ";
+  color:red;
+}
+
+article:nth-of-type(3) > h2::after{
+  content:" / CSS로 뒤에 추가한 콘텐츠";
+  color:red;
+}
+
+a[href]{
+  color : green;
+}
+
+a:hover{
+  color:yellow;
+}
+
+ul, li{
+  text-align: left;
+}

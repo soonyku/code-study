@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>8회차 문제</title>
+  <style>
+    .box1, .box2, .box3, .box4{
+      padding : 15px 0;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    .box1{
+      background-color: yellow;
+    }
+
+    .box2{
+      background-color: blue;
+    }
+
+    .box3{
+      background-color: pink;
+    }
+
+    .box4{
+      background-color: green;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- 그림에 보이는것 처럼, 두번째 박스를 300px로 고정하고 우측 박스의 width는 자동으로 작동할 수 있도록 작성 -->
+  <div class="box1">
+    첫번째 박스
+  </div>
+
+  <div class="boxA">
+    <div class="box2">
+        두번째 박스<br>
+        두번째 박스<br>
+        두번째 박스
+    </div>
+    <div class="box3">
+        세번째 박스세번째 박스세번째 박스세번째 박스세번째 박스세번째 박스세번째 박스세번째 박스세번째 박스세번째 박스세번째 박스세번째 박스세번째 박스세번째 박스
+    </div>
+  </div>
+
+  <div class="box4">
+    네번째 박스
+  </div>
+
+  <style>
+
+    .box2{
+      width: 300px;
+      float:left;
+    }
+
+    .box3{
+      margin-left:300px;
+      width:auto;
+    }
+
+    .box4{
+      width:100%;
+      overflow:hidden;
+    }
+
+  </style>
+
+
+  <!-- 반응형 홈페이지 코딩법 (mediaquery) -->
+  <!-- 768px 이하에서는 박스 4개가 나란히 정렬되도록 지정 -->
+  <style>
+    /* 768px 이하일 경우 다음 CSS 코드를 사용한다 */
+    @media (max-width:768px){
+
+      .box2{
+        width:100%;
+        float:none;
+      }
+
+      .box3{
+        margin:0;
+        width:100%;
+      }
+
+    }
+  </style>
+
+
+  <!-- 문제 -->
+  <!-- 380px이하에서 첫번째 박스, 두번째 박스, 세번째 박스, 네번째 박스를 원하는 색으로 변경해보세요 -->
+
+</body>
+</html>
