@@ -1,0 +1,38 @@
+오늘의 HTML5, CSS 5회차 문제
+경로 : C:\Users\choi\Desktop\CloudStation\플레이데이터\ZZZ_스터디\_문제
+
+요구사항
+
+1. 기본 문서는 4회차때 사용한 문서를 그대로 사용합니다.
+2. 각자가 선택한 구조와 제가 코딩한 구조가 다를 수 있으므로 확인 바랍니다.
+3. 제목은 [5회차, 선택자 사용하기] 로 작성합니다.
+4. header에 첫 제목(h1)은 CSS 선택자 사용법 이라고 작성합니다.
+5. CSS 요구사항은 다음과 같습니다.
+
+01) (CSS) 문서 전체에 margin과 padding 값을 0으로 합니다.
+02) (CSS) 문서 전체 text-align : center; 로 지정합니다.
+03) (CSS) header 태그의 margin을 30px로 지정합니다.
+04) (CSS) img의 마진을 top에만 30px를 지정합니다.
+05) (HTML) header태그 아래 h1태그에 id값을 css_title로 지정합니다.
+06) (CSS) 아이디 css_title의 font-size를 60px로, color는 blue로 지정합니다.
+07) (HTML) 모든 article 태그에 css_articles라는 클래스를 지정합니다.
+08) (CSS) 클래스 css_articles의 margin 값을 50px로 지정합니다.
+09) (CSS) 클래스 css_articles아래 h3 태그 모두 margin을 15px로 지정합니다.
+10) (CSS) article태그 아래 h2 태그 모두 font-size를 25px로 color는 red로 지정합니다.
+11) (CSS) 문서에서 첫번째 article 아래 첫번째 p태그만 font-size를 40px로 지정합니다.
+12) (CSS) 문서에서 두번째 article 아래 h2태그의 font-size를 50px로 지정합니다.
+13) (CSS) 문서에서 세번째 arti5아래 h2태그 앞에 css로 "CSS로 앞에 추가한 콘텐츠 / "를 contents 속성을 이용하여 추가하고 color를 red로 지정합니다.
+14) (CSS) 문서에서 세번째 article 아래 h2태그 뒤에 css로 " / CSS로 뒤에 추가한 콘텐츠"를 contents 속성을 이용하여 추가하고 color를 red로 지정합니다.
+
+15) (CSS) a태그 내 href속성을 가진 태그들의 color를 green으로 지정합니다.
+16) (CSS) a태그를 hover한 경우 color가 yellow로 지정되도록 합니다.
+17) (CSS) ul, li태그의 text-align을 left로 지정합니다.
+
+이제부터 많이 어려워지기 시작합니다.
+오늘 하는 과제의 경우 CSS의 선택자 부분을 다루고 있는데
+CSS는 선택자와 BOX-MODEL을 이해하고 사용할 줄 알면, 초급은 넘어갔다고 생각해야 할 정도로
+중요하면서, 처음으로 어려워지는 부분입니다.
+
+언제든지 질문하시고, 추가적으로 내가 작성한 코드에 대해서 별도로 확인받고 싶은 분은
+
+제 자리로 오셔서 코드 전체에 대해 같이 보면서 말씀나누셔도 좋습니다.
