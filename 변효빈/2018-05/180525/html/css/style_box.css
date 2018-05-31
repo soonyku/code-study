@@ -1,0 +1,36 @@
+.box2a, .box3a{
+    float:left;
+}
+.box4a{
+    clear:both;
+}
+
+.box2b,.box3b{
+    float:left;
+    width:50%;
+}
+
+.boxAb{
+    overflow:hidden;
+}
+
+
+/*문제*/
+.box_one1, .box_one2, .box_two1, .box_two2, .box_three1, .box_three2, .box_four1, .box_four2{
+    float:left;
+    width:50%;
+}
+
+.box_five1, .box_five2, .box_five3{
+    float:left;
+    width:33.333%;
+}
+
+.box_six1, .box_six2, .box_six3, .box_six4{
+    float:left;
+    width:25%;
+}
+
+.box_two, .box_three, .box_four, .box_five, .box_six{
+    overflow:hidden;
+}

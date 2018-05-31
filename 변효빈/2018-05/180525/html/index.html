@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>6회차, 박스모델의 이해</title>
+     <link rel="stylesheet" href="css/grid-guide.css">
+     <link rel="stylesheet" href="css/style_box.css">
+</head>
+
+<body>
+    <!-- 첫번째, 박스 4개를 만들기 -->
+    <p>1번</p>
+    <div class="box1">
+        1번째 박스
+    </div>
+    <div class="box2">
+        2번째 박스
+    </div>
+    <div class="box3">
+        3번째 박스
+    </div>
+
+    <div class="box4">
+        4번째 박스
+    </div>
+
+    <br><br>
+
+
+    <!-- 두번째, 2번 박스와 3번 박스를 클래스 boxA로 묶기 -->
+    <p>2번</p>
+    <div class="box1">
+        1번째 박스
+    </div>
+    <div class="boxA">
+        <div class="box2">
+            2번째 박스
+        </div>
+        <div class="box3">
+            3번째 박스
+        </div>
+    </div><!-- boxA -->
+    <div class="box4">
+        4번째 박스
+    </div>
+
+    <br><br>
+
+
+    <!-- 세번째, 2번, 3번, 4번 박스를 나란히 가로로 정렬하기 -->
+    <p>3번</p>
+    <div class="box1">
+        1번째 박스
+    </div>
+    <div class="boxA">
+        <div class="box2a">
+            2번째 박스
+        </div>
+        <div class="box3a">
+            3번째 박스
+        </div>
+    </div><!--boxA-->
+    <div class="box4">
+        4번째 박스
+    </div>
+
+    <br><br>
+
+
+  <!-- 네번째, 박스 4번을 박스 2,3번과 붙지않게 밑으로 내려기 -->
+  <p>4번</p>
+  <div class="box1">
+      1번째 박스
+  </div>
+  <div class="boxAa">
+      <div class="box2a">
+          2번째 박스
+      </div>
+      <div class="box3a">
+          3번째 박스
+      </div>
+  </div><!--boxA-->
+  <div class="box4a">
+      4번째 박스
+  </div>
+
+  <br><br>
+
+
+  <!-- 다섯번째, 박스 2번과 3번을 중간에 화면의 50%씩 차지하게 하기-->
+<p>5번</p>
+<div class="box1">
+  1번째 박스
+</div>
+<div class="boxAb">
+  <div class="box2b">
+    2번째 박스
+  </div>
+  <div class="box3b">
+    3번째 박스
+  </div>
+</div>
+<div class="box4">
+  4번째 박스
+</div>
+
+<br><br>
+<hr>
+<br><br>
+
+<!--문제1-->
+<p>문제1</p>
+<div class="box_one">
+    <div class="box_one1">첫번째</div>
+    <div class="box_one2">두번째</div>
+</div>
+<div class="box2">세번째</div>
+<div class="box3">네번째</div>
+<br><br>
+
+<!--문제2-->
+<p>문제2</p>
+<div class="box1">첫번째</div>
+<div class="box2">두번째</div>
+<div class="box_two">
+    <div class="box_two1">세번째</div>
+    <div class="box_two2">네번쨰</div>
+</div>
+<br><br>
+
+<!--문제3-->
+<p>문제3</p>
+<div class="box_three">
+    <div class="box_three1">첫번째</div>
+    <div class="box_three2">두번째</div>
+</div>
+<div class="box_four">
+    <div class="box_four1">세번째</div>
+    <div class="box_four1">네번째</div>
+</div>
+<br><br>
+
+<!--문제4-->
+<p>문제4</p>
+<div class="box_five">
+    <div class="box_five1">첫번째</div>
+    <div class="box_five2">두번째</div>
+    <div class="box_five3">세번째</div>
+</div>
+<div class="box_six">네번째</div>
+<br><br>
+
+<!--문제5-->
+<p>문제5</p>
+<div class="box_six">
+    <div class="box_six1">첫번째</div>
+    <div class="box_six2">두번째</div>
+    <div class="box_six3">세번째</div>
+    <div class="box_six4">네번째</div>
+</div>
+
+</body>
+</html>

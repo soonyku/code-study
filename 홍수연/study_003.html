@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>chapter3</title>
+  <style>
+    header {
+      background-color: ;
+      height: 75px;
+    }
+
+    .logo {
+      float: left;
+      width: 300px;
+      height: 75px;
+    }
+
+    .menu {
+      float: right;
+      line-height: 75px;
+      padding-right: 30px;
+    }
+
+    ul {
+      list-style: none;
+      padding-top: 15px;
+    }
+
+    ul li {
+      float: right;
+      font-size: 20px;
+      margin-right: 15px;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: black;
+    }
+
+    video {
+      width: 600px;
+      height: auto;
+    }
+
+    table {
+      width: 100%;
+      border: 1px solid #000000;
+      border-collapse: collapse;
+    }
+
+    tr td {
+      border: 1px solid #000000;
+      padding-left: 10px;
+    }
+
+    footer{
+      background-color: #eeeeee;
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="http://playdata.io/academy/">
+        <img src="C:\Users\HONG\Desktop\회사\회사스터디\image\logo_playdata.png"
+              alt="플레이데이타 로고"
+              width="250"
+              height="auto">
+      </a>
+    </div>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="#">취업교육과정</a></li>
+        <li><a href="#">재직자교육과정</a></li>
+        <li><a href="#">공감토크 & 세미나</a></li>
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">교육과정문의</a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <aside>
+    <audio loop controls autoplay>
+    <source src="Z:\엔코아\플레이데이터\ZZZ_스터디\홍수연\sound&video\The Weeknd - The Hills.mp3" type="audio/mp3">
+  </audio>
+    <video loop controls autoplay>
+      <source src="Z:\엔코아\플레이데이터\ZZZ_스터디\홍수연\sound&video\coding.mp4" type="video/mp4"> </source>
+    </video>
+  </aside>
+
+  <section>
+    <p>빅데이터 딥러닝 기술융합 전문인력 양성 과정 (2기)를 모집합니다.</p>
+
+    <table>
+      <tr>
+        <td>교육과정명</td>
+        <td colspan="3">빅데이터 딥러닝 기술융합 전문인력 양성과정 (2기)</td>
+      </tr>
+
+      <tr>
+        <td>교육기간</td>
+        <td>2018.06.18. ~ 2019.01.16</td>
+        <td colspan="2">7개월</td>
+      </tr>
+
+      <tr>
+        <td>교육시간</td>
+        <td>월요일 ~ 금요일</td>
+        <td>09:30 ~ 18:30</td>
+        <td>1,120시간</td>
+      </tr>
+
+      <tr>
+        <td>강사</td>
+        <td colspan="3">조재형</td>
+      </tr>
+      <tr>
+        <td>정원</td>
+        <td>선착순</td>
+        <td>30명</td>
+        <td></td>
+      </tr>
+    </table>
+
+    <form action="">
+      <p>수업신청을 위해 기본정보를 입력해주세요</p>
+          이름 : <input type="text" name="name"><br>
+          학과 : <input type="text" name="department"><br>
+          전화번호 : <input type="tel" name="phonenumber"><br>
+          원하는 시간 : <input type="datetime" name="appointment-time"><br>
+
+      <p>희망수업</p>
+          <input type="radio" name="class" value="sqlclass">SQL 기본<br>
+          <input type="radio" name="class" value="bigdata_E">빅데이터 엔지니어<br>
+          <input type="radio" name="class"  value="bigdata_DL">빅데이터 딥러닝<br>
+
+      <p>유입경로</p>
+          <input type="checkbox" name="marketing" value="facebook">페이스북<br>
+          <input type="checkbox" name="marketing" value="dator">데이토<br>
+          <input type="checkbox" name="marketing"  value="email">이메일<br>
+
+      <p>기타문의사항</p>
+          <input type="text" name="guestion"><br>
+
+      <hr>
+        <!-- 교육신청하기 버튼 -->
+      <input type="button" value="교육 신청하기" onclick="alert('답변이 제출되었습니다.')">
+    </form>
+  </section>
+
+  <footer>
+    <p>
+    회사명 : ㈜엔코아 <br>
+    대표이사 : 이화식 <br>
+    사업자 등록번호 : 229-81-30104 <br>
+    통신판매업신고번호 : 2017-서울서초-1653 <br>
+      <address>
+          TEL : +82-2-754-7302 <br>
+          FAX : +82-2-754-7303 <br>
+          E-mail : playdata@playdata.io <br>
+      </address><br>
+    COPYRIGHT@EN-CORE GROUP. ALL RIGHT RESERVED
+    </p>
+  </footer>
+</body>
+</html>

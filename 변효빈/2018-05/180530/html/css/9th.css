@@ -1,0 +1,46 @@
+header, h1, p, nav, ul, li, a, section, article, footer{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    color:black;
+}
+
+
+.top h1{
+    font-size:30px;
+}
+.top p{
+    font:12px;
+}
+
+
+.menu > ul > li{
+    list-style: none;
+    float:left;
+}
+.menu > ul > li > a{
+    display: block;
+    padding: 5px;
+    font-size: 14px;
+}
+.menu > ul > li > a:hover{
+    background-color: #eee;
+}
+
+
+.center{
+    clear:both;
+}
+.center h1{
+    font-size:36px;
+    margin-bottom:20px;
+}
+.center p{
+    margin-bottom:20px;
+}
+
+
+.bottom p{
+    color:#666;
+    font-size:14px;
+}

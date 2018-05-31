@@ -1,0 +1,52 @@
+/*1번째*/
+.box2{
+    display: block;
+    background-color: red;
+    border:10px solid black;
+}
+.box2:after{
+    content: "box2 내부에 출력을 확인하기 위해 넣은 글자입니다.";
+}
+
+
+/*2번째*/
+.box_b{
+    display: block;
+    background-color: red;
+    border:10px solid black;
+    text-align: left;
+    line-height: 1.5;
+}
+.box_b:after{
+    content: "box_b 내부에 출력을 확인하기 위해 넣은 글자입니다.";
+}
+.box_b1, .box_b2{
+    float:left;
+}
+
+
+/*3번째*/
+.box_Bb{
+    display: block;
+    overflow: hidden;
+    background-color: blue;
+    border:10px solid black;
+    text-align: left;
+    line-height: 1.5;
+}
+.box_Bb:after{
+    content: "box_B 내부에 출력을 확인하기 위해 넣은 글자입니다.";
+}
+.box_Bb1, .box_Bb2{
+    float:left;
+}
+
+
+/*4번째*/
+.box_two{
+    display: block;
+    overflow:hidden;
+}
+.box_two1, .box_two2{
+    float:left;
+}

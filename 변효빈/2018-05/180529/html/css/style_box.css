@@ -1,0 +1,24 @@
+.box2{
+    float:left;
+    width:300px;
+}
+.box3{
+    width:auto;
+    margin-left:300px;
+}
+
+.box4{
+    clear:both;
+}
+
+@media (max-width:768px){
+    .box2{
+        float: none;
+        width: 100%;
+    }
+
+    .box3{
+        margin-left: 0;
+        width: 100%;
+    }
+}

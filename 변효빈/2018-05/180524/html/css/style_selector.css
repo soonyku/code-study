@@ -1,0 +1,80 @@
+/*01~02`*/
+html, header, body, section, article, h1, h2, h3, p, img, ul, li, a, footer{
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+/*03*/
+header{
+    margin:30px;
+}
+
+/*06*/
+header > h1#css_title{
+    font-size:60px;
+    color:blue;
+}
+
+/*08*/
+section > article.css_articles {
+    margin:50px;
+}
+
+/*04*/
+section > article.css_articles > img{
+    width:800px;
+    margin-top:30px;
+}
+
+/*10*/
+section > article.css_articles > h2{
+    color:red;
+    font-size: 25px;
+}
+
+/*09*/
+section > article.css_articles > h3{
+    margin:15px;
+}
+
+/*11*/
+section > article.css_articles > p:nth-child(1){
+    font-size: 40px;
+}
+
+/*12*/
+section > article.css_articles:nth-child(2) > h2{
+    font-size:50px;
+}
+
+/*13*/
+section > article.css_articles:nth-child(3) > h2::before {
+    content:" CSS로 앞에 추가한 콘텐츠 / ";
+    color:red;
+}
+
+/*14*/
+section > article.css_articles:nth-child(3) > h2::after {
+    content:" CSS로 뒤로 추가한 콘텐츠 / ";
+    color:red;
+}
+
+/*17*/
+section > article.css_articles > ul > li{
+    text-align:left;
+}
+
+section > article.css_articles > ul > li > a{
+    color:black;
+}
+
+/*15*/
+section > article.css_articles > ul > li > a[href]{
+    color:green;
+}
+
+/*16*/
+section > article.css_articles > ul > li > a:hover{
+    color:yellow;
+}
