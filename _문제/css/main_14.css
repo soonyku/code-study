@@ -1,0 +1,376 @@
+@charset "UTF-8";
+
+/* 구글 웹폰트 추가 */
+@import url('https://fonts.googleapis.com/css?family=Paytone+One');
+
+/* Title Area */
+header{
+    padding-top:8px;
+    padding-bottom: 8px;
+}
+
+.site h1{
+  margin: 0;
+  font-size: 30px;
+  font-family:"Paytone One", san-serif;
+  font-weight: normal;
+}
+
+.site h1 a{
+  color: #83a4a8;
+  text-decoration: none;
+}
+
+/* Navigation */
+.menu ul{
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+
+.menu a{
+  display: block;
+  padding: 15px;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.menu li a:hover{
+  background-color: #75dbe7;
+}
+
+.menu li{
+  float:left;
+}
+
+nav{
+  overflow: hidden;
+  background-color: #7cbac1;
+}
+
+/* Article, story */
+.story h1{
+  margin-top:0;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+/* 기사의 카테고리 라벨부분 */
+.story_label{
+  margin-bottom:15px;
+}
+
+.story_label ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.story_label ul:after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+.story_label li{
+  float:left;
+  width:auto;
+}
+
+.story_label li a{
+  display: block;
+  margin-left: 5px;
+  padding:3px 5px;
+  border-radius: 5px;
+  background-color:#75dbe7;
+  color:#fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.story_label li a:hover{
+  background-color: #94ecf6;
+}
+
+/* 기사의 날짜부분 */
+.story_info{
+  margin-top:-10px;
+  margin-bottom: 20px;
+}
+
+.story_info i{
+  margin-right: 5px;
+  color:#aaa;
+  font-size:20px;
+}
+
+.story img{
+  max-width: 100%;
+  height: auto;
+}
+
+.story h2{
+  margin-top : 40px;
+  padding-left : 10px;
+  border-left : solid 10px #7cbac1;
+  font-weight : normal;
+}
+
+.story p{
+  margin-top:0;
+  margin-bottom:20px;
+}
+
+/* Aside, sidemenu */
+.sidemenu{
+  margin-bottom:30px;
+}
+
+.sidemenu h1{
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: dotted 2px #ddd;
+  color: #666;
+  font-size: 18px;
+}
+
+.sidemenu ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidemenu li a{
+  display: block;
+  padding: 5px;
+  color:#000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.sidemenu li a:hover{
+  background-color: #eee;
+}
+
+.sidemenu li a i{
+  margin-right : 5px;
+  color:#888;
+}
+
+/* Aside, recommend */
+.recommend{
+  margin-top: 30px;
+}
+
+.recommend h1{
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: dotted 2px #ddd;
+  color: #666;
+  font-size: 18px;
+}
+
+.recommend ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recommend li a{
+  position: relative;
+  display:block;
+  margin-bottom: 10px;
+  padding: 0px;
+  color:#000;
+  font-size:14px;
+  text-decoration: none;
+}
+
+.recommend li a:hover{
+  background-color: #eee;
+  opacity: 0.8;
+}
+
+.recommend img{
+  width:100%;
+  height:auto;
+  border:none; /* 익스플로러 10 이전 버전에서 테두리 선이 생기는 것을 막음 */
+  vertical-align:bottom; /* 수직적으로 정렬, 그림을 맨 아래에 배치하여 공백이 생기지 않도록 지정 */
+}
+
+.recommend_text{
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  box-sizing:border-box;
+  padding:5px 10px;
+  background-color: rgba(0,0,0,0.5);
+  color:#fff;
+}
+
+/* Aside, popular */
+.popular{
+  margin-top: 30px;
+}
+
+.popular h1{
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-bottom: dotted 2px #ddd;
+  color: #666;
+  font-size: 18px;
+}
+
+.popular ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.popular li a{
+  display: block;
+  padding: 5px;
+  border-bottom:dotted 1px #ddd;
+  color:#2288bb;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.popular li a:hover{
+  background-color: #eee;
+}
+
+.popular li a:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.popular img{
+  border:none;
+  float:left;
+  width:60px;
+}
+
+.popular_text{
+  float:none;
+  width:auto;
+  margin-left:60px;
+  padding-left: 15px;
+}
+
+.popular_label{
+  display: block;
+  color:#666;
+  font-size: 12px;
+}
+
+/* Copyright Area */
+footer{
+  clear : both;
+  border-top:solid 1px #ddd;
+  padding:15px 0;
+}
+
+.copyright p{
+  margin:0;
+  color:#666;
+  font-size: 14px;
+}
+
+/* 599px 이하 */
+@media(max-width:599px){
+
+  /* header */
+  header{
+    padding-top: 4px;
+    padding-bottom: 8px;
+  }
+
+
+  /* Title */
+  .site h1{
+    font-size:20px;
+  }
+
+  /* Navigation */
+  .menu li a{
+    padding : 10px 3px;
+    font-size : 11px;
+  }
+
+  /* section */
+  .section_area{
+    padding-top: 25px;
+  }
+
+  /* article */
+  .story h1{
+    font-size:26px;
+  }
+
+}
+
+/* 600px ~ 767px 이하 */
+@media(min-width:600px) and (max-width:767px){
+
+  .aside_area:after{
+    content:"";
+    display: block;
+    clear: both;
+  }
+
+  .sidemenu_recommend{
+    float:left;
+    width:50%;
+    padding-right: 20px;
+    box-sizing: border-box;
+  }
+
+  .popular{
+    float: left;
+    width:50%;
+    margin-top: 0;
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+
+}
+
+/* 768px 이상 */
+@media(min-width:768px){
+
+  #wrapper:after{
+    content:"";
+    display:block;
+    clear:both;
+  }
+
+  /* Article Area */
+  .section_area{
+    float:left;
+    width:70%;
+    padding:40px 50px 30px 0;
+    box-sizing : border-box;
+  }
+
+  /* Aside Area */
+  .aside_area{
+    float:left;
+    width:30%;
+    padding:40px 0 30px 0;
+  }
+
+}
+
+/* 1040px 이상 */
+@media(min-width:1040px){
+
+  #whole_wrapper{
+    width:1000px;
+    margin:0 auto;
+  }
+
+}
