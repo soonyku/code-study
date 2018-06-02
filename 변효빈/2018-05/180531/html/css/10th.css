@@ -1,0 +1,159 @@
+@charset "UTF-8";
+
+/*.site*/
+.site h1 a {
+    color:#000;
+    text-decoration: none;
+}
+
+.site h1 {
+    margin:0;
+    font-size:30px;
+}
+
+/*.menu*/
+.menu ul {
+    margin:0;
+    padding:0;
+}
+.menu ul li {
+    list-style: none;
+    float:left;
+}
+.menu ul li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    padding: 5px;
+}
+.menu ul li a:hover {
+    background-color: #eee;
+}
+nav {
+    overflow: hidden;
+}
+
+
+
+@@media (min-width:768px) {
+    #wrapper::after{
+        content: "";
+        display: block;
+        clear:both;
+    }
+    .section_area{
+        float:left;
+        width:70%;
+    }
+    .aside_area{
+        float:left;
+        width:30%;
+    }
+}
+
+
+/*story*/
+.story h1 {
+    margin: 0px 0px 20px 0px;
+    font-size:36px;
+}
+.story img {
+    max-width: 100%;
+    height: auto;
+}
+.story p {
+    margin: 0px 0px 20px 0px;
+}
+
+
+/*sidemenu*/
+.sidemenu {
+    margin-bottom:30px;
+}
+.sidemenu h1 {
+    margin:0px 0px 10px 0px;
+    border-bottom: dotted 2px #ddd;
+    color:#666;
+    font-size:18px;
+}
+.sidemenu ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.sidemenu ul li a {
+    display:block;
+    padding:5px;
+    color:#000;
+    font-size:14px;
+    text-decoration: none;
+}
+.sidemenu ul li a:hover {
+    background-color: #eee;
+}
+
+
+/*recommend*/
+.recommend {
+    margin-top:30px;
+}
+.recommend h1 {
+    margin:0px 0px 10px 0px;
+    border-bottom: dotted 2px #ddd;
+    color:#666;
+    font-size:18px;
+}
+.recommend ul {
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+.recommend ul li a {
+    display:block;
+    padding:5px;
+    color:#000;
+    font-size:14px;
+    text-decoration: none;
+}
+.recommend ul li a:hover {
+    background-color: #eee;
+}
+
+
+/*.popular*/
+.popular {
+    margin-top:30px;
+}
+.popular h1 {
+    margin:0px 0px 10px 0px;
+    border-bottom: dotted 2px #ddd;
+    color:#666;
+    font-size:18px;
+}
+.popular ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.popular ul li a {
+    display:block;
+    padding:5px;
+    color:#000;
+    font-size:14px;
+    text-decoration: none;
+}
+.popular ul li a:hover {
+    background-color: #eee;
+}
+
+
+/*footer*/
+footer {
+    clear:both;
+}
+.copyright p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
